@@ -17,27 +17,21 @@ function App() {
       {wasClicked && 
         <div className="bday">  
         <Confetti />
+
           <div className="columns">
             <div className="column has-text-centered">
-              <div className="columns is-flex-direction-column">
-                <div className="column" id="message">
-                  <div className="title is-2">Happy Birthday Alex!</div>
-                  <p><i>"congrats on turning 14"</i> - Kat</p>
-                  <p><i>"happy bday"</i> - Ben</p>
-                  <p><i>""</i> - Justin</p>
-                  <p><i>""</i> - Syed</p>
+              <article class="cta">
+                <img src='https://media.giphy.com/media/TEkr9oBZ57KFmMWScZ/giphy.gif'/>
+                <div class="cta__text-column">
+                  <h2 className="title is-2">Happy Birthday Alex!</h2>
+                  <p>"congrats on turning 14" - Kat</p>
+                  <p>"happy bday" - Ben</p>
+                  <p>"" - Justin</p>
+                  <p>"" - Syed</p>
                 </div>
-                <div className="column">
-                  <img src="some image"/>
-                </div>
-              </div>
-            </div>
-            <div className="column">
-              <img src='https://media.giphy.com/media/TEkr9oBZ57KFmMWScZ/giphy.gif'/> 
+              </article>
             </div>
           </div>
-
-          
         </div>
       }
     </div>
