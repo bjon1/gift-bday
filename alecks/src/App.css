@@ -1,4 +1,5 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 
 * {
     box-sizing: border-box;
@@ -179,6 +180,11 @@ img {
 h2 {
 	margin: 0;
 	font-size: 1.4rem;
+  font-family: 'DM Sans', sans-serif;
+}
+
+p {
+  font-family: 'DM Sans', sans-serif;
 }
 
 @media (min-width: 50em) {
@@ -192,13 +198,13 @@ h2 {
 	display: flex;
 	flex-wrap: wrap;
 	background: hsl(187 70% 85%);
-	max-width: 50rem;
+	max-width: 58rem;
 	width: 100%;
 	box-shadow: 0.65rem 0.65rem 0 hsl(var(--shadowColor) / 1);
 	border-radius: 0.8rem;
 	overflow: hidden;
 	border: 0.5rem solid;
-  margin-right: 11em;
+  margin-left: -4em;
 }
 
 .cta img {
@@ -208,6 +214,7 @@ h2 {
 }
 
 .cta__text-column {
+  margin-top: 2em;
 	padding: min(2rem, 5vw) min(2rem, 5vw) min(2.5rem, 5vw);
 	flex: 1 0 50%;
 }
@@ -232,11 +239,31 @@ h2 {
 }
 
 .bday {
+  opacity: 0;
   margin-left: 10em;
   position: fixed;
   width: 80%;
 }
 
+.pop {
+  opacity: 0;
+  animation: pop 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 1;
+  }
+}
 #message {
   margin-top: 3em;
 }

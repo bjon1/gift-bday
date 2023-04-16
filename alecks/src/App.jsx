@@ -15,20 +15,20 @@ function App() {
     <div className={`App ${wasClicked ? 'transition' : ' '}`}>
       <Gift update={updateWasClicked}/>
       {wasClicked && 
-        <div className="bday">  
+        <div className={`bday ${wasClicked ? 'pop' : ' '}`}>  
         <Confetti />
 
           <div className="columns">
             <div className="column has-text-centered">
-              <article class="cta">
+              <article className="cta">
                 <img src='https://media.giphy.com/media/TEkr9oBZ57KFmMWScZ/giphy.gif'/>
-                <div class="cta__text-column">
+                <div className="cta__text-column">
                   <h2 className="title is-2">Happy Birthday Alex!</h2>
-                  <p>"congrats on turning 14, i hope you have a fun birthday" - <i>Kat</i></p>
-                  <p>"Happy birthday Alex, I hope you like this gift" - <i>Ben</i></p>
-                  <p>"Feliz Cumpleaños! Thanks for sharing the same dum humor of a human rat dragging pizza" - <i>Kenia</i></p>
-                  <p>"Happy Bday buddy thanks for being the bestest greatest friend. UwU Lots of love and kisses" - <i>Justin</i></p>
-                  <p>"Happy Bday from a fellow gumi wuewuewuewuewue" - <i>Syed</i></p>
+                    <p>"congrats on turning 14, i hope you have a fun birthday" - <i>Kat</i></p>
+                    <p>"Happy birthday Alex, I hope you like this gift" - <i>Ben</i></p>
+                    <p>"Feliz Cumpleaños! Thanks for sharing the same dum humor of a human rat dragging pizza" - <i>Kenia</i></p>
+                    <p>"Happy Bday buddy thanks for being the bestest greatest friend. UwU Lots of love and kisses" - <i>Justin</i></p>
+                    <p>"Happy Bday from a fellow gumi wuewuewuewuewue" - <i>Syed</i></p>
                 </div>
               </article>
             </div>
