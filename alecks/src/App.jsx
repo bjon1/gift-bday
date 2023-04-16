@@ -24,7 +24,7 @@ function App() {
                 <img src='https://media.giphy.com/media/TEkr9oBZ57KFmMWScZ/giphy.gif'/>
                 <div class="cta__text-column">
                   <h2 className="title is-2">Happy Birthday Alex!</h2>
-                  <p>"congrats on turning 14" - <i>Kat</i></p>
+                  <p>"congrats on turning 14, i hope you have a fun birthday" - <i>Kat</i></p>
                   <p>"Happy birthday Alex, I hope you like this gift" - <i>Ben</i></p>
                   <p>"Feliz Cumpleaños! Thanks for sharing the same dum humor of a human rat dragging pizza" - <i>Kenia</i></p>
                   <p>"Happy Bday buddy thanks for being the bestest greatest friend. UwU Lots of love and kisses" - <i>Justin</i></p>
