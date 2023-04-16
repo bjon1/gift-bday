@@ -32,11 +32,11 @@
 }
 
 .gift {
-    position: relative;
-    top:15px;
-    box-shadow: 10px 30px 20px rgba(0, 0, 0, 0.3);
-    z-index: 2;
-    transition: transform 0.2s ease-in-out;
+  position: relative;
+  top:15px;
+  box-shadow: 10px 30px 20px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  transition: transform 0.2s ease-in-out;
 }
 
 .gift:hover {
@@ -140,40 +140,37 @@
     transform:rotate(10deg);  
   }
 
- .bow-right-inner{
-    position:absolute;
-    display:block;
-    height:15px;
-    width:30px;
-    border-radius: 48px 70px 0px 28px;
-    background-color: var(--purple);
-    z-index:0;
-    margin:10px;
-    transform:rotate(10deg) 
+.bow-right-inner{
+  position: absolute;
+  display: block;
+  height: 15px;
+  width: 30px;
+  border-radius: 48px 70px 0px 28px;
+  background-color: var(--purple);
+  z-index: 0;
+  margin: 10px;
+  transform: rotate(10deg) 
+}
+
+
+/*Animation Classes*/
+
+.click {
+  animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: scale(1.1);
   }
-
-
-  /*Animation Classes*/
-
-  .click {
-    animation: fadeOut 0.5s forwards;
+  100% {
+    opacity: 0;
+    display: none;
+    transform: scale(4.0);
   }
+}
 
-  @keyframes fadeOut {
-    0% {
-      opacity: 1;
-      transform: scale(1.1);
-    }
-    100% {
-      opacity: 0;
-      display: none;
-      transform: scale(0);
-    }
-  }
-
-
-
-  
 img {
 	display: block;
 	width: 100%;
@@ -215,6 +212,10 @@ h2 {
 	flex: 1 0 50%;
 }
 
+.cta__text-column > p{
+  margin-bottom: -1em;
+}
+
 .cta__text-column > * + * {
 	margin: min(1.5rem, 2.5vw) 0 0 0;
 }
@@ -230,115 +231,110 @@ h2 {
 	border: 0.35rem solid;
 }
 
+.bday {
+  margin-left: 10em;
+  position: fixed;
+  width: 80%;
+}
 
+#message {
+  margin-top: 3em;
+}
 
-  
-  
+img {
+  height: 450px;
+  border-radius: 20px;
+}
 
-  .bday {
-    margin-left: 10em;
-    position: fixed;
-    width: 80%;
-  }
+img:hover {
+  border-radius: 20px;
+}
 
-  #message {
-    margin-top: 3em;
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
   }
+  to {
+    transform: translateX(0);
+  }
+}
 
-  img {
-    height: 400px;
-    border-radius: 20px;
-  }
+.confetti {
+  z-index: 999;
+  width: 15px;
+  height: 15px;
+  background-color: #f2d74e;
+  position: absolute;
+  left: 50%;
+  animation: confetti 5s ease-in-out -2s infinite;
+  transform-origin: left top;
+}
+.confetti:nth-child(1) {
+  background-color: #f2d74e; left: 10%; animation-delay: 0;
+}
+.confetti:nth-child(2) {
+  background-color: #95c3de; left: 20%; animation-delay: -5s;
+}
+.confetti:nth-child(3) {
+  background-color: #ff9a91; left: 30%; animation-delay: -3s;
+}
+.confetti:nth-child(4) {
+  background-color: #f2d74e; left: 40%; animation-delay: -2.5s;
+}
+.confetti:nth-child(5) {
+  background-color: #95c3de; left: 50%; animation-delay: -4s;
+}
+.confetti:nth-child(6) {
+  background-color: #ff9a91; left: 60%; animation-delay: -6s;
+}
+.confetti:nth-child(7) {
+  background-color: #f2d74e; left: 70%; animation-delay: -1.5s;
+}
+.confetti:nth-child(8) {
+  background-color: #95c3de; left: 80%; animation-delay: -2s;
+}
+.confetti:nth-child(9) {
+  background-color: #ff9a91; left: 90%; animation-delay: -3.5s;
+}
+.confetti:nth-child(10) {
+  background-color: #f2d74e; left: 100%; animation-delay: -4.5s;
+}
+.confetti:nth-child(11) {
+  background-color: #aea36a; left: 15%; animation-delay: -5.6s;
+}
+.confetti:nth-child(12) {
+  background-color: #4e69f2; left: 26%; animation-delay: -1.2s;
+}
+.confetti:nth-child(13) {
+  background-color: #4ef2dc; left: 35%; animation-delay: -3.8s;
+}
+.confetti:nth-child(14) {
+  background-color: #f24e69; left: 45%; animation-delay: -1.6s;
+}
+.confetti:nth-child(15) {
+  background-color: #77f24e; left: 55%; animation-delay: -3.6s;
+}
+.confetti:nth-child(16) {
+  background-color: #4ed1f2; left: 65%; animation-delay: -2.4s;
+}
+.confetti:nth-child(17) {
+  background-color: #d94ef2; left: 75%; animation-delay: -1.6s;
+}
+.confetti:nth-child(18) {
+  background-color: #f24ebb; left: 85%; animation-delay: -3.7s;
+}
+.confetti:nth-child(19) {
+  background-color: #4ef25c; left: 95%; animation-delay: -1.2s;
+}
+.confetti:nth-child(20) {
+  background-color: #4ef264; left: 100%; animation-delay: -2.9s;
+}
 
-  img:hover {
-    border-radius: 20px;
-  }
-
-  @keyframes slide-in {
-    from {
-      transform: translateX(-100%);
-    }
-    to {
-      transform: translateX(0);
-    }
-  }
-
-  .confetti {
-    z-index: 999;
-    width: 15px;
-    height: 15px;
-    background-color: #f2d74e;
-    position: absolute;
-    left: 50%;
-    animation: confetti 5s ease-in-out -2s infinite;
-    transform-origin: left top;
-  }
-  .confetti:nth-child(1) {
-    background-color: #f2d74e; left: 10%; animation-delay: 0;
-  }
-  .confetti:nth-child(2) {
-    background-color: #95c3de; left: 20%; animation-delay: -5s;
-  }
-  .confetti:nth-child(3) {
-    background-color: #ff9a91; left: 30%; animation-delay: -3s;
-  }
-  .confetti:nth-child(4) {
-    background-color: #f2d74e; left: 40%; animation-delay: -2.5s;
-  }
-  .confetti:nth-child(5) {
-    background-color: #95c3de; left: 50%; animation-delay: -4s;
-  }
-  .confetti:nth-child(6) {
-    background-color: #ff9a91; left: 60%; animation-delay: -6s;
-  }
-  .confetti:nth-child(7) {
-    background-color: #f2d74e; left: 70%; animation-delay: -1.5s;
-  }
-  .confetti:nth-child(8) {
-    background-color: #95c3de; left: 80%; animation-delay: -2s;
-  }
-  .confetti:nth-child(9) {
-    background-color: #ff9a91; left: 90%; animation-delay: -3.5s;
-  }
-  .confetti:nth-child(10) {
-    background-color: #f2d74e; left: 100%; animation-delay: -4.5s;
-  }
-  .confetti:nth-child(11) {
-    background-color: #aea36a; left: 15%; animation-delay: -5.6s;
-  }
-  .confetti:nth-child(12) {
-    background-color: #4e69f2; left: 26%; animation-delay: -1.2s;
-  }
-  .confetti:nth-child(13) {
-    background-color: #4ef2dc; left: 35%; animation-delay: -3.8s;
-  }
-  .confetti:nth-child(14) {
-    background-color: #f24e69; left: 45%; animation-delay: -1.6s;
-  }
-  .confetti:nth-child(15) {
-    background-color: #77f24e; left: 55%; animation-delay: -3.6s;
-  }
-  .confetti:nth-child(16) {
-    background-color: #4ed1f2; left: 65%; animation-delay: -2.4s;
-  }
-  .confetti:nth-child(17) {
-    background-color: #d94ef2; left: 75%; animation-delay: -1.6s;
-  }
-  .confetti:nth-child(18) {
-    background-color: #f24ebb; left: 85%; animation-delay: -3.7s;
-  }
-  .confetti:nth-child(19) {
-    background-color: #4ef25c; left: 95%; animation-delay: -1.2s;
-  }
-  .confetti:nth-child(20) {
-    background-color: #4ef264; left: 100%; animation-delay: -2.9s;
-  }
-
-  @keyframes confetti {
-    0% { transform: rotateZ(15deg) rotateY(0deg) translate(0,0); }
-    25% { transform: rotateZ(5deg) rotateY(360deg) translate(-5vw,20vh); }
-    50% { transform: rotateZ(15deg) rotateY(720deg) translate(5vw,60vh); }
-    75% { transform: rotateZ(5deg) rotateY(1080deg) translate(-10vw,80vh); }
-    100% { transform: rotateZ(15deg) rotateY(1440deg) translate(10vw,110vh); }
-  }
+@keyframes confetti {
+  0% { transform: rotateZ(15deg) rotateY(0deg) translate(0,0); }
+  25% { transform: rotateZ(5deg) rotateY(360deg) translate(-5vw,20vh); }
+  50% { transform: rotateZ(15deg) rotateY(720deg) translate(5vw,60vh); }
+  75% { transform: rotateZ(5deg) rotateY(1080deg) translate(-10vw,80vh); }
+  100% { transform: rotateZ(15deg) rotateY(1440deg) translate(10vw,110vh); }
+}
 
